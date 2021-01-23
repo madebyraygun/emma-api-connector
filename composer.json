@@ -1,0 +1,43 @@
+{
+    "name": "madebyraygun/emma-api-connector",
+    "description": "Securely connect a signup form to the Emma API",
+    "type": "craft-plugin",
+    "version": "1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin"
+    ],
+    "support": {
+        "docs": "https://github.com/madebyraygun/emma-api-connector/blob/master/README.md",
+        "issues": "https://github.com/madebyraygun/emma-api-connector/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raygun Design, LLC",
+            "homepage": "https://madebyraygun.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+         "markroland/emma": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "madebyraygun\\emmaapiconnector\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Emma API Connector",
+        "handle": "emma-api-connector",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/madebyraygun/emma-api-connector/master/CHANGELOG.md",
+        "components": {
+            "emmaApiConnectorService": "madebyraygun\\emmaapiconnector\\services\\EmmaApiConnectorService"
+        },
+        "class": "madebyraygun\\emmaapiconnector\\EmmaApiConnector"
+    }
+}
